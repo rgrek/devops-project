@@ -3,12 +3,12 @@ entries:
   voting-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-21T23:40:04.786039669+02:00"
+    created: "2024-07-21T23:48:54.343856655+02:00"
     description: A Helm chart for Kubernetes
     digest: 28805ac949c7a80953b166b926a92d72f9e7a5f099c04d480e4b96922b93dcd6
     name: voting-app
     type: application
     urls:
-    - https://github.com/KreckyN/devops-project/tree/main/helm-chart/voting-app-0.1.0.tgz
+    - voting-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-21T23:40:04.785586234+02:00"
+generated: "2024-07-21T23:48:54.343504831+02:00"
