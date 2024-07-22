@@ -17,7 +17,7 @@ This section downloads the public key and imports it to your keyring and exports
 ```
 wget https://kreckyn.github.io/devops-project/helm-chart/pubring.gpg
 gpg --import pubring.gpg
-gpg --export > ~/.gnupg/pubring.gpg`
+gpg --export > ~/.gnupg/pubring.gpg
 ```
 #
 This section adds and updates a repository where the helm chart is stored 
