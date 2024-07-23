@@ -3,12 +3,12 @@ entries:
   voting-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-23T01:54:06.439214706+02:00"
+    created: "2024-07-23T02:05:44.155473348+02:00"
     description: test
-    digest: 052163ae18cb587a63d7f30a8b096220003b53291650fe58162cb21ee597faa6
+    digest: 8e65a959dac0fcbb85dba5d18bc39ee47cdff1b98a99502893bdf41b6f47e1ed
     name: voting-app
     type: application
     urls:
     - https://kreckyn.github.io/devops-project/helm-chart/voting-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-23T01:54:06.438874752+02:00"
+generated: "2024-07-23T02:05:44.155101804+02:00"
