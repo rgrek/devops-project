@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.redis.name }}
+  labels: {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.redis.replicaCount | default "1" }}
+  selector:
+    matchLabels: {{- include "voting-app.redis.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{- include "voting-app.redis.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Values.redis.image.name }}
+          image: {{ .Values.redis.image.repository }}:{{ .Values.redis.image.tag }}
+          ports:
+            - containerPort: {{ .Values.redis.port }}

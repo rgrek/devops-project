@@ -3,24 +3,24 @@ Hash: SHA512
 
 apiVersion: v2
 appVersion: 1.16.0
-description: test
+description: A Helm chart for a simple microservice-based architecture application.
 name: voting-app
 type: application
 version: 0.1.0
 
 ...
 files:
-  voting-app-0.1.0.tgz: sha256:8e65a959dac0fcbb85dba5d18bc39ee47cdff1b98a99502893bdf41b6f47e1ed
+  voting-app-0.1.0.tgz: sha256:1ff2351a5ac4e5aeb7996daa29a4e4767a519f5384e6e2bb0af39bbeef1edc48
 -----BEGIN PGP SIGNATURE-----
 
-wsDcBAEBCgAQBQJmnvOpCRBu1yhiHEErmwAA2QsMAHU8qarv1c1BSOaOTwtO+V75
-H5EHC62G1aLIzCCD7wLgRhPiWK3H2i9PuQoVPzfZTGfklwT/NOuiy05gRggMg25Q
-mb3NMEbJqcfGSfp3DwGBCtPQZWZ9ja0PX0alFssB0slptv8lecol2YngeYgtYCnp
-/08hBjkBesqAar0tgU0VVQtrX9PXJgPwAoZ5Vh7TJjzeR/wytbYKnOg5iC9DcDTj
-qdrUIOzkXzKKuU8m/ojpC51icdvwLM8EnQjNGGg8Qv1LQHvkBg70DFYxGKrrMZai
-PVeKarn0Vz6YByzjrkEjNG+n/b7N3qAO2fOJ3j2zsdxZoOsZ4ethcyilinQ7Qxp0
-OhdKhD9E+GQgO5X03WV7GgUL9D0plHREuVJ9cw/qZXUlzmcMXbKRQd0Bv6jgTWPz
-7bysqbd9kWDD1ZBkrn9WFDuQAZbF91i50gwa4lkbUrybRbPWFZ1g5f+k/V6jyZGd
-1xFKF6qa4SVDL8zkq3yoDToU2nJHRBZ7Tb6Ni0NRqQ==
-=m+Kh
+wsDcBAEBCgAQBQJmp4tqCRBu1yhiHEErmwAAxQYMAEOOSUyp9h2ezZeBaoACZSsG
+KG/PfV+BuftgUpIuVyGLs4zNwr9RxRMed3aHYMQQpx02IxR8cvT2LrTtb3rk4UCH
+wIQYTa+GSPTTgDy/ICyoR+oXXX3M3JYQUCEqJy4vPfd5Li+xRLWBlqjL0VV2w7tV
+3GedSEhwu9pdeTRFDvOmMzSoddJITr7hbJwWWkviN4xoJWJozEJWe/YbVSepHBex
+xlXQb/S4zkqtT5qY/23zHiHEER7MQP3a2JQYENyhoM5nB+UODDEva0vqXQ8fgaTM
+5e7uqDfuT+E1pvFInMRw6fs2FzG9qaLmM8MZHT0WekyzcSNeQi4iDsq8vVqevQ1d
+rb08CyyNdJjpe1j/DjtUsutt8snixYkqCoavYbjkloA88ExaGEcTufsvST0Hqvul
+oS4KEVTVqMrRMII4dkdrJDG68doCK3vWl7egWTWugKiUCJ5zMrgXi0GeKtW/eU1o
+TFKTzn5RxgM4cwUNcfo2Ik3FyHfCYLZmrKGHYzH3aw==
+=ie63
 -----END PGP SIGNATURE-----

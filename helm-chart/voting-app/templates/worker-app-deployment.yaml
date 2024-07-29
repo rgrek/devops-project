@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.worker.name }}
+  labels: {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.worker.replicaCount | default "1" }}
+  selector:
+    matchLabels: {{- include "voting-app.worker.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{- include "voting-app.worker.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Values.worker.image.name }}
+          image: {{ .Values.worker.image.repository }}:{{ .Values.worker.image.tag }}

@@ -1,0 +1,46 @@
+{
+    "scanExcludes": [
+        "**/node_modules",
+        "**/.git",
+        "**/pkg/mod/**",
+        "**/.kube",
+        "**/*.swp"
+    ],
+    "fileIncludes": [
+        "*.yaml",
+        "*.yml"
+    ],
+    "folderReadsMaxDepth": 10,
+    "k8sVersion": "1.26.3",
+    "helm": {
+        "previewConfigurationMap": {
+            "e8f2a5bc-063a-45ac-90bc-462bb2a293b8": {
+                "id": "e8f2a5bc-063a-45ac-90bc-462bb2a293b8",
+                "name": "asdasd",
+                "helmChartFilePath": "/Chart.yaml",
+                "command": "template",
+                "options": {},
+                "valuesFileItemMap": {
+                    "/values": {
+                        "id": "/values",
+                        "filePath": "/values.yaml",
+                        "isChecked": false,
+                        "order": 0
+                    }
+                }
+            }
+        }
+    },
+    "settings": {
+        "helmPreviewMode": "template",
+        "kustomizeCommand": "kubectl",
+        "enableHelmWithKustomize": true,
+        "createDefaultObjects": false,
+        "setDefaultPrimitiveValues": true,
+        "allowEditInClusterMode": true
+    },
+    "kubeConfig": {
+        "path": "/home/roman/.kube/config",
+        "currentContext": "minikube"
+    }
+}

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.resultApp.name }}
+  labels: {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.resultApp.replicaCount | default "1" }}
+  selector:
+    matchLabels: {{- include "voting-app.result.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{- include "voting-app.result.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Values.resultApp.image.name }}
+          image: {{ .Values.resultApp.image.repository }}:{{ .Values.resultApp.image.tag }}
+          ports:
+            - containerPort: {{ .Values.resultApp.port }}

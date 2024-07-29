@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.postgres.name }} 
+  labels: {{- include "voting-app.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.postgres.replicaCount | default "1" }}
+  selector:
+    matchLabels: {{- include "voting-app.postgres.labels" . | nindent 6 }}
+  template:
+    metadata:
+      labels: {{- include "voting-app.postgres.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Values.postgres.image.name }}
+          image: {{ .Values.postgres.image.repository }}:{{ .Values.postgres.image.tag }}
+          ports:
+            - containerPort: {{ .Values.postgres.port }}
+          env:
+            - name: POSTGRES_USER
+              value: {{ .Values.postgres.username }}
+            - name: POSTGRES_PASSWORD
+              value: {{ .Values.postgres.password }}
