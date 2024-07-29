@@ -3,12 +3,12 @@ entries:
   voting-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-23T02:24:13.572854392+02:00"
-    description: test
-    digest: 8e65a959dac0fcbb85dba5d18bc39ee47cdff1b98a99502893bdf41b6f47e1ed
+    created: "2024-07-29T14:36:28.892968056+02:00"
+    description: A Helm chart for a simple microservice-based architecture application.
+    digest: 1ff2351a5ac4e5aeb7996daa29a4e4767a519f5384e6e2bb0af39bbeef1edc48
     name: voting-app
     type: application
     urls:
     - https://rgrek.github.io/devops-project/helm-chart/voting-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-23T02:24:13.572507869+02:00"
+generated: "2024-07-29T14:36:28.892632383+02:00"
