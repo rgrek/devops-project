@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voting-app-deployment
+  labels:
+    app: voting-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: voting-app-pod
+      app: voting-app
+  template:
+    metadata:
+      labels:
+        name: voting-app-pod
+        app: voting-app
+    spec:
+      containers:
+        - name: voting-app
+          image: kodekloud/examplevotingapp_vote:v1
+          ports:
+            - containerPort: 80
